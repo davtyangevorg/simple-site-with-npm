@@ -1,16 +1,16 @@
 // app.js
 
-// import { Button } from "./button/index.js";
-// import { getUserData } from "./helpers/index.js";
+import { Button } from "./button/index.js";
+import { getUserData } from "./helpers/index.js";
 
 const App = () => {
-  // const getUserDataAsync = async () => {
-  //   const data = await getUserData();
-  //   console.log("data", data);
-  // };
+  const getUserDataAsync = async () => {
+    const data = await getUserData();
+    console.log("data", data);
+  };
 
   React.useEffect(() => {
-    // getUserDataAsync();
+    getUserDataAsync();
   }, []);
 
   React.useEffect(() => {
@@ -18,7 +18,11 @@ const App = () => {
     console.log("result", Atomics.waitAsync);
   }, []);
 
-  return <div>app</div>;
+  return (
+    <div>
+      <Button />
+    </div>
+  );
 };
 
 export default App;
