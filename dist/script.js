@@ -1,9 +1,12 @@
-import App from "./react-components/app.js";
-const button = document.getElementById("clickMe1");
-const message = document.getElementById("message1");
-button.addEventListener("click", () => {
+"use strict";
+
+var _app = _interopRequireDefault(require("./react-components/app.js"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var button = document.getElementById("clickMe1");
+var message = document.getElementById("message1");
+button.addEventListener("click", function () {
   message.textContent = message.textContent ? "" : "You clicked the button!";
 });
 console.log("react", React);
-const rootNode = document.getElementById("root");
-ReactDOM.render( /*#__PURE__*/React.createElement(App, null), rootNode);
+var rootNode = document.getElementById("root");
+ReactDOM.render( /*#__PURE__*/React.createElement(_app["default"], null), rootNode);

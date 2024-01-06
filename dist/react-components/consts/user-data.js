@@ -1,4 +1,10 @@
-export const userData = [{
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.userData = void 0;
+var userData = exports.userData = [{
   id: 1,
   name: "John Doe",
   email: ""
