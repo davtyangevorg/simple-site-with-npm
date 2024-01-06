@@ -1,12 +1,6 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Button = void 0;
-var _hooks = require("./hooks.js");
-var Button = exports.Button = function Button() {
-  var _useClickButton = (0, _hooks.useClickButton)(),
+import { useClickButton } from "./hooks.js";
+export var Button = function Button() {
+  var _useClickButton = useClickButton(),
     count = _useClickButton.count,
     handleClick = _useClickButton.handleClick;
   return /*#__PURE__*/React.createElement("button", {

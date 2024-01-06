@@ -1,7 +1,4 @@
-"use strict";
-
-var _app = _interopRequireDefault(require("./react-components/app.js"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+import App from "./react-components/app.js";
 var button = document.getElementById("clickMe1");
 var message = document.getElementById("message1");
 button.addEventListener("click", function () {
@@ -9,4 +6,4 @@ button.addEventListener("click", function () {
 });
 console.log("react", React);
 var rootNode = document.getElementById("root");
-ReactDOM.render( /*#__PURE__*/React.createElement(_app["default"], null), rootNode);
+ReactDOM.render( /*#__PURE__*/React.createElement(App, null), rootNode);
